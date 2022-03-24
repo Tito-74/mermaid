@@ -43,3 +43,17 @@ subgraph Legend[Legend]
     Legend4[external system]
 end
 ```
+
+
+``` mermaid
+graph TB
+    A[Sensor]==> B[Server]
+    B ==> C[API]
+    C ==> D[Web App]
+    C==>E[Mobile App]
+    C==>F[Desktop App]
+    D-->h[User/Admin]
+    E-->h[User/Admin]
+    F-->|administer|I[User/Admin]
+end
+```
